@@ -1,0 +1,15 @@
+=== Changelog ===
+
+= 2.5.0 =
+* REFACTOR: Reestructuración completa del código para separar responsabilidades.
+* NEW: Creación de clases GFWC_Mailer, GFWC_Admin_UI y GFWC_Ajax_Handler.
+* NEW: Archivo changelog.txt agregado.
+
+= 2.4.0 =
+* Compatibilidad completa con HPOS.
+* Mejor manejo de errores.
+* Plantilla de email mejorada.
+* Validación de archivos más robusta.
+
+= 2.0.0 =
+* Versión inicial con funcionalidad básica.

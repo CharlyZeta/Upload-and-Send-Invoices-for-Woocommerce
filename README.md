@@ -17,7 +17,14 @@ Plugin para WordPress que permite subir y enviar facturas PDF desde el área de 
 - ✅ Registro detallado de errores para diagnóstico
 - ✅ Registro automático en las notas del pedido (auditoría de envío)
 
-## 📦 Requisitos
+## � Capturas de Pantalla
+
+| Metabox de Gestión | Columna en Pedidos |
+|:------------------:|:------------------:|
+| ![Metabox](assets/screenshots/metabox.png) | ![Columna](assets/screenshots/column.png) |
+
+
+## �📦 Requisitos
 
 - WordPress 5.6+
 - WooCommerce 7.0+

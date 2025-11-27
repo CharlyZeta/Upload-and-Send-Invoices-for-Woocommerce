@@ -15,6 +15,7 @@ Plugin para WordPress que permite subir y enviar facturas PDF desde el área de 
 - ✅ Columnas personalizadas en el listado de pedidos
 - ✅ Validación de archivos PDF (tipo y tamaño)
 - ✅ Registro detallado de errores para diagnóstico
+- ✅ Registro automático en las notas del pedido (auditoría de envío)
 
 ## 📦 Requisitos
 

@@ -1,0 +1,269 @@
+/* Gestor de Facturas WooCommerce - Premium Stylesheet */
+
+.gfwc-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    padding: 4px 0;
+}
+
+/* Card layout */
+.gfwc-invoice-card {
+    background: #ffffff;
+    border: 1px solid #c3c4c7;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.gfwc-invoice-card.active {
+    border-left: 4px solid #38bdf8;
+}
+
+.gfwc-invoice-card.empty {
+    border-left: 4px solid #cbd5e1;
+    background: #f8fafc;
+}
+
+.gfwc-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.gfwc-icon-doc {
+    font-size: 20px;
+}
+
+.gfwc-file-details {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.gfwc-file-name {
+    font-weight: 600;
+    color: #1e293b;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.gfwc-view-link {
+    font-size: 11px;
+    color: #2251d9;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.gfwc-view-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.gfwc-status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.gfwc-status-label {
+    color: #64748b;
+}
+
+/* Badges */
+.gfwc-badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.gfwc-badge.success {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.gfwc-badge.failed {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Action row for buttons */
+.gfwc-actions-row {
+    display: flex;
+    gap: 8px;
+}
+
+.gfwc-action-btn {
+    flex: 1;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px !important;
+    height: 30px !important;
+    line-height: 28px !important;
+    padding: 0 8px !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.gfwc-action-btn.delete {
+    color: #ef4444 !important;
+    border-color: #fca5a5 !important;
+    background: #fff !important;
+}
+
+.gfwc-action-btn.delete:hover {
+    background: #fef2f2 !important;
+    border-color: #ef4444 !important;
+}
+
+/* Visual divider */
+.gfwc-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 15px 0;
+}
+
+.gfwc-divider::before, .gfwc-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.gfwc-divider:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.gfwc-divider:not(:empty)::after {
+    margin-left: .5em;
+}
+
+/* Custom File Uploader */
+.gfwc-file-upload-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.gfwc-file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.gfwc-file-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.gfwc-file-label:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+}
+
+.gfwc-upload-icon {
+    font-size: 16px;
+}
+
+.gfwc-upload-text {
+    font-size: 12px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.gfwc-upload-btn-main {
+    width: 100%;
+    height: 34px !important;
+    line-height: 32px !important;
+    font-size: 13px !important;
+    border-radius: 4px !important;
+}
+
+/* Shipping notification card styling */
+#gfwc-shipping-metabox-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#gfwc-shipping-metabox-content textarea, 
+#gfwc-shipping-metabox-content input[type="text"] {
+    border-radius: 4px;
+    border: 1px solid #cbd5e1;
+    padding: 6px 10px;
+    font-size: 13px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+#gfwc-shipping-metabox-content textarea {
+    width: 100%;
+    height: 100px;
+}
+
+#gfwc-shipping-metabox-content input[type="text"] {
+    width: 100%;
+    max-width: 320px; /* Reducido para cuando se ve en pantalla completa */
+}
+
+#gfwc-shipping-metabox-content textarea:focus, 
+#gfwc-shipping-metabox-content input[type="text"]:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 1px #38bdf8;
+    outline: none;
+}
+
+#gfwc-send-shipping-btn {
+    width: 100%;
+    margin-top: 10px;
+    height: 34px !important;
+    line-height: 32px !important;
+    border-radius: 4px !important;
+}
+
+/* Custom column icons in WooCommerce order list */
+.gfwc-column-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    vertical-align: middle;
+}
+
+.gfwc-column-icons .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
+}
+
+.gfwc-column-icons .dashicons:hover {
+    transform: scale(1.15);
+}

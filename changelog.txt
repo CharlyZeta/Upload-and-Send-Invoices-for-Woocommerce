@@ -1,5 +1,27 @@
 === Changelog ===
 
+= 2.6.3 =
+* NEW: El marcador {lSeguimiento} en el correo del cliente ahora se envía formateado como enlace/hipertexto interactivo en vez de texto plano.
+* NEW: Vista previa dinámica "Probar enlace" al escribir o guardar una URL de seguimiento en el metabox de administración.
+
+= 2.6.2 =
+* NEW: Botón e informe de diagnóstico interactivo por AJAX en el metabox de pedidos.
+* FIX: Guardado preventivo de datos de seguimiento en la base de datos antes de enviar el correo electrónico (evita pérdida de datos si falla el SMTP).
+* OPTIMIZE: Sistema de logs simplificado integrado con el visor nativo de logs de WooCommerce.
+* OPTIMIZE: Eliminación de código HTML duplicado en el mailer unificando la envoltura estructural del correo.
+
+= 2.6.1 =
+* FIX: Reducido el ancho de los campos de texto de seguimiento a 320px en pantallas completas.
+* FIX: Corregido el icono de factura subida en el listado de pedidos reemplazando dashicons-pdf (inexistente) por dashicons-media-document.
+* NEW: Agregada confirmación de envío de datos de envío (icono dashicons-car) en el listado de pedidos.
+* OPTIMIZE: Remoción de estilos inline en inputs para control centralizado desde CSS.
+
+= 2.6.0 =
+* NEW: Funcionalidad de Notificaciones de Envío con soporte para variables dinámicas ({nombre}, {nSeguimiento}, {lSeguimiento}).
+* NEW: Soporte completo para internacionalización (i18n) en todo el plugin.
+* FIX: Corregido error de carga de scripts en entornos HPOS.
+* OPTIMIZE: Refactorización de gfwc-script.js con JS moderno y soporte de traducción.
+
 = 2.5.0 =
 * REFACTOR: Reestructuración completa del código para separar responsabilidades.
 * NEW: Creación de clases GFWC_Mailer, GFWC_Admin_UI y GFWC_Ajax_Handler.
